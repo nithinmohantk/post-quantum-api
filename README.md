@@ -49,31 +49,34 @@ You can test the API using tools like curl, Postman, or any HTTP client.
 Encrypt a Message
 Endpoint: /encrypt
 Method: POST
-Request Body: JSON object with a message field (base64 encoded)
+- Request Body: JSON object with a message field (base64 encoded)
 
-```
+```json
 {
   "message": "SGVsbG8gV29ybGQh"  // "Hello World!" in base64
 }
 ```
-Response: JSON object with a ciphertext field (base64 encoded)
-```
+- Response: JSON object with a ciphertext field (base64 encoded)
+```json
 {
   "ciphertext": "SGVsbG8gV29ybGQh"  // Placeholder response
 }
 ```
-Decrypt a Message
+### 4. Decrypt a Message
 Endpoint: /decrypt
 Method: POST
-Request Body: JSON object with a ciphertext field (base64 encoded)
+- Request Body: JSON object with a ciphertext field (base64 encoded)
+```json
 {
   "ciphertext": "SGVsbG8gV29ybGQh"  // Placeholder response
 }
-Response: JSON object with a message field (base64 encoded)
+```
+- Response: JSON object with a message field (base64 encoded)
+```json
 {
   "message": "SGVsbG8gV29ybGQh"  // "Hello World!" in base64
 }
-
+```
 
 ### Notes
 - Security: This example is for educational purposes and does not include security measures such as HTTPS, authentication, or input validation. Consider implementing these for a production environment.
