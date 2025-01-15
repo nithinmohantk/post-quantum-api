@@ -46,9 +46,9 @@ By default, the server will run on http://127.0.0.1:5000/.
 You can test the API using tools like curl, Postman, or any HTTP client.
 
 ### 3. Using the API
-Encrypt a Message
-Endpoint: /encrypt
-Method: POST
+#### 3.1 Encrypt a Message
+**Endpoint: /encrypt**
+**Method: POST**
 - Request Body: JSON object with a message field (base64 encoded)
 
 ```json
@@ -62,9 +62,9 @@ Method: POST
   "ciphertext": "SGVsbG8gV29ybGQh"  // Placeholder response
 }
 ```
-### 4. Decrypt a Message
-Endpoint: /decrypt
-Method: POST
+#### 3.2 Decrypt a Message
+**Endpoint: /decrypt**
+**Method: POST**
 - Request Body: JSON object with a ciphertext field (base64 encoded)
 ```json
 {
@@ -79,7 +79,7 @@ Method: POST
 ```
 
 ### Notes
-- Security: This example is for educational purposes and does not include security measures such as HTTPS, authentication, or input validation. Consider implementing these for a production environment.
-- Cryptography: The pq_encrypt and pq_decrypt functions are placeholders. Replace them with actual post-quantum cryptography implementations as needed.
+- **Security:** This example is for educational purposes and does not include security measures such as HTTPS, authentication, or input validation. Consider implementing these for a production environment.
+- **Cryptography:** The pq_encrypt and pq_decrypt functions are placeholders. Replace them with actual post-quantum cryptography implementations as needed.
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
