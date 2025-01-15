@@ -1,6 +1,12 @@
 # Post-Quantum Encryption and Decryption REST API
-
 This repository contains a simple REST API for post-quantum encryption and decryption using Flask. The API provides endpoints to encrypt and decrypt messages using placeholder functions. You can replace these functions with actual post-quantum cryptography implementations as needed.
+
+## Introduction
+Creating a REST API for post-quantum encryption and decryption involves several steps. 
+
+For this example, I'll use **Flask**, a lightweight WSGI web application framework in Python, and a hypothetical post-quantum cryptography library. 
+Since there isn't a widely adopted standard library for post-quantum cryptography in Python, I'll use a placeholder for encryption and decryption functions. 
+You can replace these with actual implementations from libraries like ```pqcrypto``` or ```liboqs``` once you have them integrated.
 
 ## Prerequisites
 
